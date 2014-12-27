@@ -23,9 +23,10 @@ Ueditor for CodeIgniter（ci）插件
 
 2、将public目录放到项目根目录（如果你的项目目录中没有public，放其目录也可以）
 	
-	文件说明：public/ueditor  Ueditor包
-	文件说明：public/umeditor  umeditor
-	文件说明：public/js  	umeditor包的依赖jquery
+	文件说明：
+		public/ueditor  Ueditor包
+		public/umeditor  umeditor
+		public/js  	umeditor包的依赖jquery
 	
 3、uploads为上传目录，可以在uploads中进行配置，根据自己项目确定
 
