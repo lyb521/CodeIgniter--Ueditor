@@ -6,7 +6,7 @@ Ueditor for CodeIgniter（ci）插件
 
 根据最新的CodeIgniter测试制作；
 
-支持Ueditor和umeditor两个版本，具体配置可参考demo里面
+支持Ueditor和umeditor两个版本编辑器，具体配置可参考demo里面
 
 
 ### 使用说明
