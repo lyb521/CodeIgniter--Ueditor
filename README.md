@@ -58,9 +58,6 @@ Ueditor for CodeIgniter（ci）插件
 		<script type="text/javascript">
 
 		//实例化编辑器
-		//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-	   //var ue = UE.getEditor('editor');
-		
 		var editor1 = UE.getEditor('editor',{
 			serverUrl:'/welcome/ueditor',
 			initialFrameWidth:"960",
@@ -91,8 +88,9 @@ Ueditor for CodeIgniter（ci）插件
 	
 ```
 三、联系
+
     代码还在不断完善中，有任何意见和建议：
-    
+   
 	个人主页：http://leiyongbo.com
 	
 	github开源: https://github.com/lyb19900227
