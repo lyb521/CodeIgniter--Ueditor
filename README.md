@@ -90,3 +90,10 @@ Ueditor for CodeIgniter（ci）插件
 		</script>
 	
 ```
+三、联系
+	代码还在不断完善中，有任何意见和建议：
+	个人主页：http://leiyongbo.com
+	github开源: https://github.com/lyb19900227
+	新浪微博： http://weibo.com/mwave
+	联系邮箱：lyb19900227@126.com
+	腾讯账号：35896962
