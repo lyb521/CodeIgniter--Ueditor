@@ -133,10 +133,8 @@ class Ueditor{
 				break;
 		
 			default:
-				$result = json_encode(array(
-				'state'=> 'wrong require'
-						));
-						break;
+				$result = json_encode(array('state'=> '请求错误'));
+				break;
 							
 		}
 		
@@ -183,11 +181,12 @@ class Ueditor{
 			
 			$image_data = $this->CI->upload->data();
 		
-			$product_pic_path = $this->upload_params['pic_path'].$flile_name.$image_data['file_name'];
+			//返回的图片路径
+			$pic_path = $this->upload_params['pic_path'].$flile_name.$image_data['file_name'];
 		
 			$data = array(
 					'state'=>"SUCCESS",
-					'url'=> $product_pic_path,
+					'url'=> $pic_path,
 					'title'=>$image_data['file_name'],
 					'original'=>$image_data['orig_name'],
 					'file_ext'=> $image_data['file_ext'],
@@ -304,8 +303,8 @@ class Ueditor{
 			
 			$flile_name = ltrim(self::_get_full_path($config['pathFormat']),'/');
 			
-			//图片路径
-			$product_pic_path = $this->upload_params['pic_path'].$flile_name.$imgname;
+			//返回的图片路径
+			$pic_path = $this->upload_params['pic_path'].$flile_name.$imgname;
 			
 			//上传路径
 			$upload_path = $this->upload_path.$flile_name;
@@ -316,7 +315,7 @@ class Ueditor{
 			if( file_put_contents($this->upload_path.$flile_name.$imgname, $img) ){
 				array_push($list, array(
 				"state" => 'SUCCESS',
-				"url" => $product_pic_path,
+				"url" => $pic_path,
 				"size" => strlen($img),
 				"title" => $imgname,
 				"original" => $oriName,
@@ -357,8 +356,8 @@ class Ueditor{
 		
 		$flile_name = ltrim(self::_get_full_path($config['pathFormat']),'/');
 		
-		//图片路径
-		$product_pic_path = $this->upload_params['pic_path'].$flile_name.$imgname;
+		//返回的图片路径
+		$pic_path = $this->upload_params['pic_path'].$flile_name.$imgname;
 		
 		//上传路径
 		$upload_path = $this->upload_path.$flile_name;
@@ -370,7 +369,7 @@ class Ueditor{
 		
 			$data=array(
 					'state'=>'SUCCESS',
-					'url'=>$product_pic_path,
+					'url'=>$pic_path,
 					'title'=>$imgname,
 					'original'=>'scrawl.png',
 					'type'=>'.png',
@@ -387,12 +386,12 @@ class Ueditor{
 	
 	
 	/**
-	 *
 	 * 输出结果
 	 * @param data 数组数据
 	 * @return 组合后json格式的结果
 	 */
 	public function output_data(){
+		
 		return $this->output_data;
 	}
 	
