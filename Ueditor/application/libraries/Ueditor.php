@@ -473,13 +473,13 @@ class Ueditor{
 					if($allowFiles!='all'){
 						if (preg_match("/\.(".$allowFiles.")$/i", $file)) {
 							$files[] = array(
-									'url'=> substr($path2, strlen($_SERVER['DOCUMENT_ROOT'])),
+									'url'=> substr($path2, strlen($this->upload_path)),
 									'mtime'=> filemtime($path2)
 							);
 						}
 					}else{
 						$files[] = array(
-								'url'=> substr($path2, strlen($_SERVER['DOCUMENT_ROOT'])),
+								'url'=> substr($path2, strlen($this->upload_path)),
 								'mtime'=> filemtime($path2)
 						);
 					}
