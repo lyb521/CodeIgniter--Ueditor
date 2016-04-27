@@ -94,9 +94,3 @@ Ueditor for CodeIgniter（ci）插件
 	个人主页：http://leiyongbo.com
 	
 	github开源: https://github.com/lyb19900227
-	
-	新浪微博： http://weibo.com/mwave
-	
-	联系邮箱：lyb19900227@126.com
-	
-	腾讯账号：35896962
