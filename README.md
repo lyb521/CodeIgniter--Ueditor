@@ -91,6 +91,6 @@ Ueditor for CodeIgniter（ci）插件
 
     代码还在不断完善中，有任何意见和建议：
    
-	个人主页：http://leiyongbo.com
+	个人主页：https://leiyongbo.com
 	
-	github开源: https://github.com/lyb19900227
+	github开源: https://github.com/lyb1521
